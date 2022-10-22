@@ -2,14 +2,14 @@ from rest_framework.viewsets import ModelViewSet
 from Budget.models import Budget, Income, Expenses
 from Budget.serializers import BudgetSerializer, IncomeSerializer, ExpensesSerializer
 from rest_framework.permissions import IsAuthenticated
-from Budget.filter_backends import ShowOnlyOwnBudgets
+from Budget.filter_backends import ShowOnlyOwnOrSharedBudgets
 
 
 class BudgetViewSet(ModelViewSet):
     queryset = Budget.objects.all()
     serializer_class = BudgetSerializer
     permission_classes = [IsAuthenticated]
-    filter_backends = [ShowOnlyOwnBudgets]
+    filter_backends = [ShowOnlyOwnOrSharedBudgets]
 
 
 class IncomeViewSet(ModelViewSet):

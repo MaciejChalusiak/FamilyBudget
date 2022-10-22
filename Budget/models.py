@@ -8,6 +8,7 @@ class Budget(models.Model):
 
     owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name="my_budgets")
     name = models.CharField(max_length=128)
+    shared = models.ManyToManyField(User, related_name='shared_budgets', blank=True)
 
 
 class Income(models.Model):

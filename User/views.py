@@ -15,6 +15,12 @@ class UserViewSet(ModelViewSet):
     serializer_class = UserSerializer
     permission_classes = [IsAuthenticated]
 
+    def get_permissions(self):
+        if self.request.method == "POST":
+            return []
+        else:
+            return [IsAuthenticated()]
+
     def create(self, request, *args, **kwargs):
         data = request.data.copy()
         data['password'] = make_password(data['password'])
