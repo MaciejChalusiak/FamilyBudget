@@ -17,12 +17,13 @@ from django.contrib import admin
 from django.urls import include, path
 from rest_framework import routers
 from User.views import UserViewSet
-from Budget.views import BudgetViewSet, IncomeViewSet
+from Budget.views import BudgetViewSet, IncomeViewSet, ExpensesViewSet
 
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 router.register(r'budgets', BudgetViewSet)
 router.register(r'income', IncomeViewSet)
+router.register(r'expenses', ExpensesViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),

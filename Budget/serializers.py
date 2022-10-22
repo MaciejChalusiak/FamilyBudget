@@ -1,5 +1,5 @@
-from rest_framework.serializers import ModelSerializer, StringRelatedField
-from Budget.models import Budget, Income
+from rest_framework.serializers import ModelSerializer
+from Budget.models import Budget, Income, Expenses
 
 
 class IncomeSerializer(ModelSerializer):
@@ -8,9 +8,16 @@ class IncomeSerializer(ModelSerializer):
         fields = ['url', 'category', 'amount', 'description', 'budget']
 
 
+class ExpensesSerializer(ModelSerializer):
+    class Meta:
+        model = Expenses
+        fields = ['url', 'category', 'amount', 'description', 'budget']
+
+
 class BudgetSerializer(ModelSerializer):
     income = IncomeSerializer(many=True)
+    expenses = ExpensesSerializer(many=True)
 
     class Meta:
         model = Budget
-        fields = ['url', 'owner', 'name', 'income', 'income']
+        fields = ['url', 'owner', 'name', 'income', 'expenses']
