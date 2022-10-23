@@ -1,5 +1,5 @@
 from django_filters import rest_framework as filters
-from Budget.models import Budget, Income, Expenses
+from budget.models import Budget, Income, Expenses
 
 
 class BudgetFilter(filters.FilterSet):

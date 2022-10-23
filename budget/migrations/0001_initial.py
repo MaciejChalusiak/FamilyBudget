@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Budget',
+            name='budget',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=128)),
@@ -29,7 +29,7 @@ class Migration(migrations.Migration):
                 ('category', models.CharField(choices=[('earned_income', 'Earned Income'), ('portfolio_income', 'Portfolio Income'), ('passive_income', 'Passive Income'), ('other', 'Other')], max_length=128)),
                 ('amount', models.DecimalField(decimal_places=2, max_digits=8)),
                 ('description', models.CharField(blank=True, max_length=256, null=True)),
-                ('budget', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='income', to='Budget.budget')),
+                ('budget', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='income', to='budget.budget')),
             ],
         ),
     ]

@@ -1,10 +1,10 @@
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.permissions import IsAuthenticated
 from django_filters.rest_framework import DjangoFilterBackend
-from Budget.filter_backends import ShowOnlyOwnOrSharedBudgets, ShowOnlyOwnOrSharedExpensesAndIncome
-from Budget.filtersets import BudgetFilter, IncomeFilter, ExpensesFilter
-from Budget.models import Budget, Income, Expenses
-from Budget.serializers import BudgetSerializer, IncomeSerializer, ExpensesSerializer
+from budget.filter_backends import ShowOnlyOwnOrSharedBudgets, ShowOnlyOwnOrSharedExpensesAndIncome
+from budget.filtersets import BudgetFilter, IncomeFilter, ExpensesFilter
+from budget.models import Budget, Income, Expenses
+from budget.serializers import BudgetSerializer, IncomeSerializer, ExpensesSerializer
 
 
 class BudgetsViewSet(ModelViewSet):

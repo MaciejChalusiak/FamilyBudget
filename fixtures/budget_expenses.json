@@ -1,6 +1,6 @@
 [
   {
-    "model": "Budget.expenses",
+    "model": "budget.expenses",
     "pk": 1,
     "fields": {
       "category": "housing",
@@ -10,7 +10,7 @@
     }
   },
     {
-    "model": "Budget.expenses",
+    "model": "budget.expenses",
     "pk": 2,
     "fields": {
       "category": "saving",
@@ -20,7 +20,7 @@
     }
   },
     {
-    "model": "Budget.expenses",
+    "model": "budget.expenses",
     "pk": 3,
     "fields": {
       "category": "medical_healthcare",
@@ -30,7 +30,7 @@
     }
   },
     {
-    "model": "Budget.expenses",
+    "model": "budget.expenses",
     "pk": 4,
     "fields": {
       "category": "housing",
@@ -40,7 +40,7 @@
     }
   },
     {
-    "model": "Budget.expenses",
+    "model": "budget.expenses",
     "pk": 5,
     "fields": {
       "category": "saving",
@@ -50,7 +50,7 @@
     }
   },
     {
-    "model": "Budget.expenses",
+    "model": "budget.expenses",
     "pk": 6,
     "fields": {
       "category": "medical_healthcare",

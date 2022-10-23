@@ -1,7 +1,7 @@
 import pytest
 import requests
 from common.tests_fixtures.fixtures import base_url, admin_credentials, admin_id
-from Budget.enums import IncomeCategoryEnum
+from budget.enums import IncomeCategoryEnum
 
 
 budgets_url = f'{base_url}/budgets/'

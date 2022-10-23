@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('Budget', '0001_initial'),
+        ('budget', '0001_initial'),
     ]
 
     operations = [
@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
                 ('category', models.CharField(choices=[('housing', 'Housing'), ('transportation', 'Transportation'), ('food', 'Food'), ('utilities', 'Utilities'), ('insurance', 'Insurance'), ('medical_healthcare', 'Medical Healthcare'), ('saving', 'Saving'), ('personal', 'Personal'), ('other', 'Other')], max_length=128)),
                 ('amount', models.DecimalField(decimal_places=2, max_digits=8)),
                 ('description', models.CharField(blank=True, max_length=256, null=True)),
-                ('budget', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='expenses', to='Budget.budget')),
+                ('budget', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='expenses', to='budget.budget')),
             ],
         ),
     ]

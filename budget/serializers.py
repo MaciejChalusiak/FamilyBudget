@@ -1,6 +1,6 @@
 from rest_framework.serializers import ModelSerializer
-from Budget.models import Budget, Income, Expenses
-from User.serializers import ShowSharedUserSerializer
+from budget.models import Budget, Income, Expenses
+from user.serializers import ShowSharedUserSerializer
 
 
 class IncomeSerializer(ModelSerializer):

@@ -1,6 +1,6 @@
 [
   {
-    "model": "Budget.budget",
+    "model": "budget.budget",
     "pk": 1,
     "fields": {
       "owner": 2,
@@ -8,7 +8,7 @@
     }
   },
     {
-    "model": "Budget.budget",
+    "model": "budget.budget",
     "pk": 2,
     "fields": {
       "owner": 2,
@@ -17,7 +17,7 @@
     }
   },
       {
-    "model": "Budget.budget",
+    "model": "budget.budget",
     "pk": 3,
     "fields": {
       "owner": 3,
@@ -25,7 +25,7 @@
     }
   },
       {
-    "model": "Budget.budget",
+    "model": "budget.budget",
     "pk": 4,
     "fields": {
       "owner": 3,

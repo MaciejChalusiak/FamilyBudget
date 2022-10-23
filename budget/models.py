@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from Budget.enums import IncomeCategoryEnum, ExpensesCategoryEnum
+from budget.enums import IncomeCategoryEnum, ExpensesCategoryEnum
 
 
 class Budget(models.Model):

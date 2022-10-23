@@ -25,8 +25,6 @@ def test_creating_user():
 
 
 def test_creating_user_with_already_existing_username():
-    response = requests.get(f'{url}', **admin_credentials)
-
     response = requests.get(f'{url}1', **admin_credentials)
     assert response.status_code == 200
     existing_username = response.json()['username']
