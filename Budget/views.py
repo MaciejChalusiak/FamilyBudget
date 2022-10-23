@@ -7,7 +7,7 @@ from Budget.models import Budget, Income, Expenses
 from Budget.serializers import BudgetSerializer, IncomeSerializer, ExpensesSerializer
 
 
-class BudgetViewSet(ModelViewSet):
+class BudgetsViewSet(ModelViewSet):
     queryset = Budget.objects.all()
     serializer_class = BudgetSerializer
     permission_classes = [IsAuthenticated]
@@ -15,7 +15,7 @@ class BudgetViewSet(ModelViewSet):
     filterset_class = BudgetFilter
 
 
-class IncomeViewSet(ModelViewSet):
+class IncomesViewSet(ModelViewSet):
     queryset = Income.objects.all()
     serializer_class = IncomeSerializer
     permission_classes = [IsAuthenticated]

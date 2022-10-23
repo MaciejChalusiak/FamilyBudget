@@ -18,7 +18,7 @@ class ExpensesSerializer(ModelSerializer):
 class BudgetSerializer(ModelSerializer):
     income = IncomeSerializer(many=True, required=False)
     expenses = ExpensesSerializer(many=True, required=False)
-    shared = ShowSharedUserSerializer(many=True)
+    shared = ShowSharedUserSerializer(many=True, required=False)
 
     class Meta:
         model = Budget
