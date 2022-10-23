@@ -1,5 +1,5 @@
-from rest_framework.filters import BaseFilterBackend
 from django.db.models import Q
+from rest_framework.filters import BaseFilterBackend
 
 
 class ShowOnlyOwnOrSharedBudgets(BaseFilterBackend):

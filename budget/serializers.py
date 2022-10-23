@@ -1,18 +1,19 @@
 from rest_framework.serializers import ModelSerializer
-from budget.models import Budget, Income, Expenses
+
+from budget.models import Budget, Expenses, Income
 from user.serializers import ShowSharedUserSerializer
 
 
 class IncomeSerializer(ModelSerializer):
     class Meta:
         model = Income
-        fields = ['url', 'category', 'amount', 'description', 'budget']
+        fields = ["url", "category", "amount", "description", "budget"]
 
 
 class ExpensesSerializer(ModelSerializer):
     class Meta:
         model = Expenses
-        fields = ['url', 'category', 'amount', 'description', 'budget']
+        fields = ["url", "category", "amount", "description", "budget"]
 
 
 class BudgetSerializer(ModelSerializer):
@@ -22,4 +23,4 @@ class BudgetSerializer(ModelSerializer):
 
     class Meta:
         model = Budget
-        fields = ['url', 'owner', 'name', 'income', 'expenses', 'shared']
+        fields = ["url", "owner", "name", "income", "expenses", "shared"]

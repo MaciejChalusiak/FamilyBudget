@@ -1,5 +1,6 @@
 from django_filters import rest_framework as filters
-from budget.models import Budget, Income, Expenses
+
+from budget.models import Budget, Expenses, Income
 
 
 class BudgetFilter(filters.FilterSet):
@@ -11,7 +12,7 @@ class BudgetFilter(filters.FilterSet):
 
 
 class IncomeFilter(filters.FilterSet):
-    budget_name = filters.Filter(field_name='budget__name')
+    budget_name = filters.Filter(field_name="budget__name")
     amount_gte = filters.Filter(field_name="amount", lookup_expr="gte")
     amount_lte = filters.Filter(field_name="amount", lookup_expr="lte")
 
@@ -25,7 +26,7 @@ class IncomeFilter(filters.FilterSet):
 
 
 class ExpensesFilter(filters.FilterSet):
-    budget_name = filters.Filter(field_name='budget__name')
+    budget_name = filters.Filter(field_name="budget__name")
     amount_gte = filters.Filter(field_name="amount", lookup_expr="gte")
     amount_lte = filters.Filter(field_name="amount", lookup_expr="lte")
 
