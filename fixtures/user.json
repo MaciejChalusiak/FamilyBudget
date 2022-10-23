@@ -1,0 +1,72 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$jDLKRXEa9pJLTstsiiV5PI$XTsGpCGwyj2ldXumqOMILB3BKlawjAkuZLvht7zlbso=",
+      "last_login": "2022-10-22 15:28:16.251062+00",
+      "is_superuser": true,
+      "username": "admin",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2022-10-22 09:45:06.899772+00",
+      "email": "admin@mail.com"
+    }
+  },
+    {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$jDLKRXEa9pJLTstsiiV5PI$XTsGpCGwyj2ldXumqOMILB3BKlawjAkuZLvht7zlbso=",
+      "last_login": "2022-10-22 15:28:16.251062+00",
+      "is_superuser": false,
+      "username": "jan",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-10-22 09:45:06.899772+00",
+      "email": "jan@mail.com"
+    }
+  },
+      {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$jDLKRXEa9pJLTstsiiV5PI$XTsGpCGwyj2ldXumqOMILB3BKlawjAkuZLvht7zlbso=",
+      "last_login": "2022-10-22 15:28:16.251062+00",
+      "is_superuser": false,
+      "username": "filip",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-10-22 09:45:06.899772+00",
+      "email": "filip@mail.com"
+    }
+  },
+      {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$jDLKRXEa9pJLTstsiiV5PI$XTsGpCGwyj2ldXumqOMILB3BKlawjAkuZLvht7zlbso=",
+      "last_login": "2022-10-22 15:28:16.251062+00",
+      "is_superuser": false,
+      "username": "kasia",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-10-22 09:45:06.899772+00",
+      "email": "kasia@mail.com"
+    }
+  },
+      {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$jDLKRXEa9pJLTstsiiV5PI$XTsGpCGwyj2ldXumqOMILB3BKlawjAkuZLvht7zlbso=",
+      "last_login": "2022-10-22 15:28:16.251062+00",
+      "is_superuser": false,
+      "username": "gosia",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-10-22 09:45:06.899772+00",
+      "email": "gosia@mail.com"
+    }
+  }
+]

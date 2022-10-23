@@ -1,0 +1,62 @@
+[
+  {
+    "model": "Budget.expenses",
+    "pk": 1,
+    "fields": {
+      "category": "housing",
+      "amount": 152.45,
+      "description": null,
+      "budget_id": 1
+    }
+  },
+    {
+    "model": "Budget.expenses",
+    "pk": 2,
+    "fields": {
+      "category": "saving",
+      "amount": 458.15,
+      "description": null,
+      "budget_id": 1
+    }
+  },
+    {
+    "model": "Budget.expenses",
+    "pk": 3,
+    "fields": {
+      "category": "medical_healthcare",
+      "amount": 100,
+      "description": null,
+      "budget_id": 1
+    }
+  },
+    {
+    "model": "Budget.expenses",
+    "pk": 4,
+    "fields": {
+      "category": "housing",
+      "amount": 21,
+      "description": null,
+      "budget_id": 2
+    }
+  },
+    {
+    "model": "Budget.expenses",
+    "pk": 5,
+    "fields": {
+      "category": "saving",
+      "amount": 800,
+      "description": null,
+      "budget_id": 3
+    }
+  },
+    {
+    "model": "Budget.expenses",
+    "pk": 6,
+    "fields": {
+      "category": "medical_healthcare",
+      "amount": 950,
+      "description": null,
+      "budget_id": 4
+    }
+  }
+]

@@ -1,0 +1,62 @@
+[
+    {
+    "model": "Budget.income",
+    "pk": 1,
+    "fields": {
+      "category": "earned_income",
+      "amount": 2000,
+      "description": null,
+      "budget_id": 1
+    }
+  },
+    {
+    "model": "Budget.income",
+    "pk": 2,
+    "fields": {
+      "category": "portfolio_income",
+      "amount": 500,
+      "description": null,
+      "budget_id": 1
+    }
+  },
+    {
+    "model": "Budget.income",
+    "pk": 3,
+    "fields": {
+      "category": "passive_income",
+      "amount": 100,
+      "description": null,
+      "budget_id": 1
+    }
+  },
+      {
+    "model": "Budget.income",
+    "pk": 4,
+    "fields": {
+      "category": "earned_income",
+      "amount": 5000,
+      "description": null,
+      "budget_id": 2
+    }
+  },
+    {
+    "model": "Budget.income",
+    "pk": 5,
+    "fields": {
+      "category": "portfolio_income",
+      "amount": 120,
+      "description": null,
+      "budget_id": 3
+    }
+  },
+    {
+    "model": "Budget.income",
+    "pk": 6,
+    "fields": {
+      "category": "passive_income",
+      "amount": 600,
+      "description": null,
+      "budget_id": 4
+    }
+  }
+]

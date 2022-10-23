@@ -1,0 +1,36 @@
+[
+  {
+    "model": "Budget.budget",
+    "pk": 1,
+    "fields": {
+      "owner": 2,
+      "name": "jan private budget"
+    }
+  },
+    {
+    "model": "Budget.budget",
+    "pk": 2,
+    "fields": {
+      "owner": 2,
+      "name": "jan shared budget",
+      "shared": [5, 4]
+    }
+  },
+      {
+    "model": "Budget.budget",
+    "pk": 3,
+    "fields": {
+      "owner": 3,
+      "name": "filip private budget"
+    }
+  },
+      {
+    "model": "Budget.budget",
+    "pk": 4,
+    "fields": {
+      "owner": 3,
+      "name": "filip shared budget",
+      "shared": [2]
+    }
+  }
+]
